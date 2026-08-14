@@ -1,0 +1,163 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding-top: 18px;
+  background-color: #ffffff;
+  color: #1f1f1f;
+}
+.contenedor-centrado {
+  max-width: 960px; 
+  width: 90%;
+  margin: 20px auto; 
+}
+section {
+  margin-bottom: 40px;
+  width: 100%;
+}
+.titulo-grande {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.subtitulo-seccion {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.titulo-caja {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.precio-texto {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+}
+.pago-cuotas {
+  font-size: 12px;
+  color: #5f6368;
+  margin-bottom: 15px;
+}
+.texto-cuerpo {
+  font-size: 14px;
+  color: #3c4043;
+  line-height: 1.5;
+}
+.etiqueta-gris {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5f6368;
+}
+.boton-azul {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+.boton-azul:hover {
+  background-color: #1557b0;
+}
+.enlace-azul {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.tarjeta-principal {
+  background-color: #f3eee7;
+  border-radius: 28px;
+  padding: 40px 32px;
+}
+.banner-gris {
+  background-color: #f6f3ee;
+  border-radius: 20px;
+  padding: 16px 24px;
+  font-size: 14px;
+}
+.tarjeta-beige {
+  background-color: #f3eee7;
+  border-radius: 24px;
+  padding: 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tarjeta-foto {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  min-height: 250px;
+}
+.tarjeta-producto {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #f0f0f0;
+}
+.nombre-producto {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.precio-producto {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.caja-icono {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+.caja-icono img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+.icono-chico {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.imagen-fluida {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.imagen-pantalla {
+  max-width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
+.imagen-chip {
+  width: 100%;
+  max-width: 940px;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+}
+.imagen-portada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imagen-producto {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}

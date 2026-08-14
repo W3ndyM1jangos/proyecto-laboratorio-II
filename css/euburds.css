@@ -1,0 +1,71 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+}
+.tarjeta-mini, .tarjeta-hero, .tarjeta-comparativa, .tarjeta-simple {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  padding: 24px;
+}
+.tarjeta-mini {
+    text-align: center;
+}
+.tarjeta-mini img {
+  width: 100%;
+  max-width: 140px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+.tarjeta-mini p {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0; 
+}
+.bg-crema { 
+  background-color: #f6f3ee;
+}
+.bg-menta {
+  background-color: #edf4f0;
+}
+.btn-blue-google {
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 50px;
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-outline-google {
+  border: 1px solid #70757a;
+  color: #202124;
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-dark-google {
+  background-color: #202124;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+.link-google { 
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px; 
+}
+.badge-ahorro {
+  background-color: #c4eed0;
+  color: #072711;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 12px;
+}

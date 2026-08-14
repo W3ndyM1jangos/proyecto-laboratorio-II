@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+.box {
+  text-align: center;
+}
+.rojo {
+  color: red;
+  font-weight: bold;
+  font-size: 75px;
+}
+.btn {
+  display: inline-block;
+  background: blue;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}

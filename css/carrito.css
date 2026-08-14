@@ -1,0 +1,120 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+.navbar-carrito {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 18px 24px;
+    border-bottom: 1px solid #eeeeee;
+}
+.navbar-carrito a {
+    position: absolute;
+    left: 24px;
+    display: flex;
+    align-items: center;
+}
+.titulo-carrito {
+    font-size: 10px;
+    color: #3c4043;
+}
+.carrito-contenedor {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.carrito-vacio {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.carrito-vacio h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 24px;
+}
+.btn-continuar {
+    display: inline-block;
+    border: 1px solid #747775;
+    border-radius: 999px;
+    padding: 10px 24px;
+    color: #1f1f1f;
+    text-decoration: none;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    transition: background-color 0.15s ease;
+}
+.tarjeta-guardado {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    padding: 20px 24px;
+}
+.tarjeta-guardado h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #202124;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #eeeeee;
+}
+.tarjeta-guardado-cuerpo p {
+    font-size: 15px;
+}
+.img-carrito {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+/* ===== Confirmación de pedido (más llamativa) ===== */
+.confirmacion-pedido {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #e6f4ea;
+    border: 1px solid #b7dfc2;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 30px;
+    animation: aparecer-confirmacion 0.4s ease;
+}
+.confirmacion-icono {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #1e8e3e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+.confirmacion-titulo {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #14532d;
+}
+.confirmacion-subtitulo {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+    color: #3c6b4a;
+}
+@keyframes aparecer-confirmacion {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}   

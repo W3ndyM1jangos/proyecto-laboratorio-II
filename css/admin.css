@@ -1,0 +1,40 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #f8f9fa;
+}
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 360px;
+}
+.logo-admin {
+    width: 36px;
+    height: 36px;
+}
+.pantalla-centrada {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-google-azul {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+    width: 279px;
+}
+.btn-google-azul:hover {
+    background-color: #1557b0;
+    border-color: #1557b0;
+}
+.panel-contenedor {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+.panel-contenedor thead {
+    background-color: #1a73e8;
+    color: #fff;
+}

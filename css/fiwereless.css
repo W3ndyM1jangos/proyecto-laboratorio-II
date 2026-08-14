@@ -1,0 +1,37 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serifs;
+  color: #202124;
+}
+
+.btn-azul {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  border: none;
+}
+
+.btn-azul:hover {
+  background-color: #1557b0;
+  color: #fff;
+}
+
+.link-azul {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-azul:hover {
+  text-decoration: underline;
+}
+
+.card-simple {
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  background: #fff;
+  height: 100%;
+}

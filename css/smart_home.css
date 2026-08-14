@@ -1,0 +1,205 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1f1f1f;
+  background-color: #ffffff;
+}
+.store-container {
+  max-width: 1080px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+section {
+  margin-bottom: 64px;
+}
+h1 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.hero-section {
+  text-align: center;
+}
+.hero-description {
+  max-width: 580px;
+  margin: 0 auto 48px auto;
+  font-size: 14px;
+  color: #5f6368;
+}
+.section-tag {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5f6368;
+  letter-spacing: 0.5px;
+}
+.section-title {
+  font-size: 2.25rem;
+  margin-bottom: 32px;
+}
+.card-google {
+  border-radius: 28px;
+  padding: 32px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-verde {
+    background-color: #d1e2c4;
+}
+.card-gris  {
+    background-color: #e8eaed;
+}
+.card-rosa  {
+    background-color: #fce8e6;
+}
+.card-lila  {
+    background-color: #eeedf7;
+}
+.badge-tag {
+  font-size: 12px;
+  font-weight: 500;
+}
+.card-subtext {
+  font-size: 14px;
+  color: #5f6368;
+  margin-bottom: 12px;
+}
+.price {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.payment-terms {
+  font-size: 12px;
+  color: #5f6368;
+  margin-bottom: 24px;
+}
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.btn-primary-pill {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 8px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary-pill:hover {
+  background-color: #1557b0;
+  color: #ffffff;
+}
+.link-blue {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-circle-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #dadce0;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat-card {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+}
+.cat-card img {
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+.cat-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.section-header i {
+  font-size: 28px;
+}
+.card-image-only {
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.card-image-only img {
+  width: 100%;
+  height: auto;
+}
+.card-text-center {
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.grid-img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.prompt-card {
+  text-align: center;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.media-preview-box {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+}
+.media-preview-box img {
+  width: 100%;
+}
+.accordion-button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.accordion-body {
+  color: #5f6368;
+  font-size: 14px;
+}
+.sustainability-section {
+  text-align: center;
+}
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+.gallery-row img {
+  border-radius: 16px;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.gallery-row img.tall {
+  max-height: 220px;
+}
