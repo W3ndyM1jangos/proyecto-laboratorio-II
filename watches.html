@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fitbit, Pixel Watches & Trackers with Google Health</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/watches.css">
+</head>
+<body>
+    <div class="navbarr">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-xl navbar-google sticky-top navbar">
+        <div class="container-fluid px-lg-0">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icono.png" alt="Bootstrap" width="31" height="30">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#googleNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="googleNav">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0 gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="phone.html">Phones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fiwireles.html">Fi Wireless</a></li>
+                    <li class="nav-item"><a class="nav-link" href="watches.html">Watches & Trackers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="euburds.html">Earbuds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="smarthome.html">Smart Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tablest.html">Tablets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accesories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+                </ul>
+                <!-- busquedad, ubicacion, admin -->
+                <div class="d-flex align-items-center">
+                    <button class="btn-icon-google" type="button" title="Buscar">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <a href="https://www.google.com/maps" class="btn-stores-google" title="Stores">
+                        <i class="bi bi-geo-alt-fill fs-6"></i>
+                        <span>Stores</span>
+                    </a>
+                    <a href="php/carrito.php" class="btn-icon-google posicion-carrito" title="Carrito de compras">
+                        <i class="bi bi-cart3"></i>
+                        <span class="badge-carrito" id="badgeCarrito"></span>
+                    </a>
+                    <a href="php/admin/login.php" class="btn-stores-google" title="Administración">
+                        <i class="bi bi-person-lock fs-6"></i>
+                        <span>Admin</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <section class="container-fluid py-4 overflow-auto text-center">
+  <div class="d-flex justify-content-lg-center gap-4 min-w-max">
+    <div class="item-icono">
+      <img src="img/wa1.png" alt="Google Pixel Watch 5">
+      <p>Google Pixel Watch 5</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa2.png" alt="Google Fitbit Air">
+      <p>Google Fitbit Air</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa3.png" alt="Google Pixel Watch 4">
+      <p>Google Pixel Watch 4</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa4.png" alt="Google Fitbit Charge 6">
+      <p>Google Fitbit Charge 6</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa5.png" alt="Google Fitbit Inspire 3">
+      <p>Google Fitbit Inspire 3</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa6.png" alt="Google Fitbit Versa 4">
+      <p>Google Fitbit Versa 4</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa7.png" alt="Google Fitbit Sense 2">
+      <p>Google Fitbit Sense 2</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa8.png" alt="Google Fitbit Ace LTE">
+      <p>Google Fitbit Ace LTE</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa9.png" alt="Google Health Premium">
+      <p>Google Health Premium</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa10.png" alt="Compare">
+      <p>Compare</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa11.png" alt="Google Pixel Watch Bands">
+      <p>Google Pixel Watch Bands</p>
+    </div>
+    <div class="item-icono">
+      <img src="img/wa12.png" alt="Google Fitbit Bands">
+      <p>Google Fitbit Bands</p>
+    </div>
+  </div>
+</section>
+   
+<!-- videos -->
+<section class="container my-5 text-center">
+  <h2 class="titulo-hero">Make every move a healthy one with Google Pixel and Fitbit.</h2>
+  <div class="row justify-content-center mt-4">
+    <div class="col-12 col-md-10 col-lg-8">
+      <video class="video-hero" src="img/watches/wa1.mp4" autoplay loop muted playsinline></video>
+    </div>
+  </div>
+</section>
+
+<!-- 3 productos -->
+<section class="container my-5">
+  <h2 class="titulo-seccion">From glanceable displays to totally screenless. All designed for Google Health.</h2>
+  <a href="#" class="link-google">Compare &gt;</a>
+  <div class="row g-4 mt-2">
+    <div class="col-12 col-md-4">
+      <div class="tarjeta-salud">
+        <div class="box-imagen">
+          <img src="img/watches/tarjeta1.jpg" alt="Pixel Watch 5">
+        </div>
+        <h3>Google Pixel Watch 5. Designed for Gemini Intelligence.</h3>
+        <p class="desc">The watch that delivers personalized, proactive help. Built for your health, fitness, and safety.</p>
+        <p class="precio">From $399.99</p>
+        <div class="acciones">
+          <form action="php/carrito.php" method="POST" class="d-inline">
+            <input type="hidden" name="accion" value="agregar">
+            <input type="hidden" name="imagen" value="img/watches/tarjeta1.jpg">
+            <input type="hidden" name="volver" value="watches.html">
+            <input type="hidden" name="nombre" value="Pixel Watch 5">
+            <input type="hidden" name="precio" value="399.99">
+            <button type="submit" class="btn-google-primary border-0">Pre-order</button>
+          </form>
+          <a href="#" class="link-google">Learn more &gt;</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="tarjeta-salud">
+        <div class="box-imagen">
+          <img src="img/watches/tajeta2.jpg" alt="Fitbit Air">
+        </div>
+        <h3>Google Fitbit Air</h3>
+        <p class="desc">The screenless device for effortless health and wellness tracking.</p>
+        <p class="precio">From $99.99</p>
+        <div class="acciones">
+          <form action="php/carrito.php" method="POST" class="d-inline">
+            <input type="hidden" name="accion" value="agregar">
+            <input type="hidden" name="imagen" value="img/watches/tajeta2.jpg">
+            <input type="hidden" name="volver" value="watches.html">
+            <input type="hidden" name="nombre" value="Google Fitbit Air">
+            <input type="hidden" name="precio" value="99.99">
+            <button type="submit" class="btn-google-primary border-0">Buy</button>
+          </form>
+          <a href="#" class="link-google">Learn more &gt;</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="tarjeta-salud">
+        <div class="box-imagen bg-rosa">
+          <img src="img/watches/tarjeta3.jpg" alt="Stephen Curry Edition">
+        </div>
+        <h3>Designed in collaboration with Stephen Curry.</h3>
+        <p class="desc">Special edition collection for Google Fitbit Air and Google Pixel Watch 5.</p>
+        <div class="acciones">
+          <a href="#" class="link-google">Learn more &gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- caja celeste con 3 tarjetas -->
+<section class="container my-5">
+  <div class="banner-celeste">
+    <div class="text-center max-800">
+      <span class="subtitulo-health">♥ Google Health</span>
+      <h2>A new relationship with your health.</h2>
+      <p>Effortless tracking and personalized health coaching that's built with Gemini and adapts to you.</p>
+    </div>
+
+    <div class="row justify-content-center my-4">
+      <div class="col-12 col-lg-10 text-center">
+        <img src="img/watches/cajacesteleimg.jpg" class="img-curry" alt="">
+        <p class="cita">"I'm excited for what this is going to mean for the world, for health and wellness."</p>
+      </div>
+    </div>
+
+    <h3 class="text-center my-4">Built with Gemini to deliver fitness, sleep, and health coaching.</h3>
+    <div class="row g-3">
+      <div class="col-12 col-md-4">
+        <div class="card-feature">
+          <img src="img/watches/celes1.jpg" alt="Guidance">
+          <h4>Guidance that adapts to your progress.</h4>
+          <p>It all starts with a conversation with Google Health Coach.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card-feature">
+          <img src="img/watches/celes2.jpg" alt="Plans">
+          <h4>Plans that adjust to the rest and recovery you need.</h4>
+          <p>Get coaching that keeps you on track no matter what life brings.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card-feature">
+          <img src="img/watches/celes3.jpg" alt="Suggestions">
+          <h4>Proactive suggestions for your health.</h4>
+          <p>Google Health Coach supports you with guidance powered by a holistic view.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- tienda en fisico -->
+<section class="container my-5">
+  <div class="row align-items-center g-4">
+    <div class="col-12 col-md-6">
+      <img src="img/watches/store.jpg" class="img-tienda" alt="Google Store">
+    </div>
+    <div class="col-12 col-md-6">
+      <h2>Visit a Google Store in person.</h2>
+      <p>Shop our latest products, talk to an expert, and more. Find the store closest to you.</p>
+      <a href="#" class="btn-google-dark">Learn more</a>
+    </div>
+  </div>
+</section>
+
+    <section class="seccion-texto-legal">
+        <div class="contenedor-legales">
+            <ol class="lista-numerada">
+                <li>Special Edition available while supplies last. Not available in all countries.</li>
+                <li>5G service not available in all areas; speed and performance depend on factors like device configuration and capabilities, network traffic location, signal strength and signal obstruction. Actual results may vary. For more information visit <a href="https://g.co/fi/broadband-facts" target="_blank">g.co/fi/broadband-facts</a>.</li>
+                <li>0% APR with Google Store Financing on Phone and Qualifying Purchases: Google Store Financing is a credit card issued and serviced solely by Synchrony Bank and can be used only for purchases at store.google.com. Credit card application decisions are made solely by Synchrony Bank. 0% APR with equal monthly payments is available every day on Phone Purchases (as defined in the credit card agreement). At times, we may offer Equal Pay Financing promotions with 0% APR on identified Qualifying Purchases (and all other items purchased in the same sales transaction). No interest will be charged on Phone Purchases or Qualifying Purchases and equal monthly payments are required equal to the total Phone or Qualifying Purchase amount divided by the number of months in the applicable promotional period, rounded to the whole cent. Any estimated monthly payments shown on a Phone Purchase or Qualifying Purchase may be shown rounded to the next whole dollar (for ease of display) or may be shown rounded to the whole cent. See your billing statement for your actual equal monthly payment required, which will be rounded to the whole cent. If you make your payments by the due date each month, the monthly payment (adjusted for taxes, delivery and any other items purchased in the same sale transaction) should allow you to pay off the Phone Purchase or Qualifying Purchase within the number of months advertised if this balance is the only balance on your account during the promotional period. If you have other balances on your account, this monthly payment will be added to the monthly payment applicable to those balances. New Accounts as of 6/27/24: Purchase APR for Phone Purchases 0.00%. Purchase APR for Other Purchases 34.99%. Penalty APR 39.99%. Min Interest Charge $2. Subject to credit approval.</li>
+            </ol>
+            <ul class="lista-simbolos">
+                <li>* Your Pixel will generally receive Pixel Drops during the applicable Android update and support periods for the phone. See <a href="https://g.co/pixel/updates" target="_blank">g.co/pixel/updates</a> for details. Availability of some Pixel Drops may vary by phone and device model.</li>
+                <li>† All orders that deliver free of charge use the lowest-cost option unless otherwise noted.</li>
+                <li>§ Google Fitbit Air works with most phones running on Android 11 or higher and Apple iOS 16.4 or higher. Google Health and Google Fitbit Air require Google Account, Google Health app and internet connection. Feature availability varies; some features require Google Health Premium membership. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary. Not intended for medical purposes. See <a href="https://g.co/health/fitbit-air" target="_blank">g.co/health/fitbit-air</a> and <a href="https://g.co/fitbit/compatibility" target="_blank">g.co/fitbit/compatibility</a> for more information.</li>
+                <li>‡ Compared to other Google wearable devices.</li>
+                <li>§§ Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in select countries and languages. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.</li>
+                <li>** Available only to those who sign up with a Google Account for marketing emails from store.google.com between 7/15/2026 at 10:00am PT and 8/7/2026 at 11:59pm PT. Promotional code expires 8/27/2026 at 11:59 pm PT; while supplies last. Must be US resident, aged 18 years or older, with US shipping address. Must be redeemed on Google Store only. Limit 1 per customer. The coupon code can only be used for purchase of the advertised specified Pixel 11 (unlocked or Fi) devices and cannot be applied to any other devices, Google subscriptions, services nor Google Merchandise products. Promotional code and redemption instructions will be emailed after sign-up on 8/11/2026.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer con iconos-->
+    <footer class="footer-real">
+        <div class="footer-contenido">
+            <h2 class="footer-titulo">Google Store</h2>
+            
+            <div class="footer-columnas">
+                <div class="col-footer">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Magazine</a></li>
+                        <li><a href="#">Pixel for Business</a></li>
+                        <li><a href="#">Official Merch</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Orders</h5>
+                    <ul>
+                        <li><a href="#">Tracking an order</a></li>
+                        <li><a href="#">Shipping options</a></li>
+                        <li><a href="#">Country availability</a></li>
+                        <li><a href="#">Pixel Care+</a></li>
+                        <li><a href="#">Trade-in</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Get help</a></li>
+                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#">Installations</a></li>
+                        <li><a href="#">Disability Support</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Send Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Sustainability</h5>
+                    <ul>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Device recycling</a></li>
+                        <li><a href="#">Refurbished devices</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <span class="pais-select"><img src="img/bandera.png" alt="US Flag" width="20px" height="20px"> United States</span>
+                    <a href="#">Privacy</a>
+                    <a href="#">Google Nest Commitment to Privacy</a>
+                    <a href="#">Sales Terms</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+ <!--Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrito-badge.js"></script>
+</body>
+</html>

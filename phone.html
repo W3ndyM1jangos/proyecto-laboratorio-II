@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the Google Pixel 11 Phones Family</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+    <div class="navbarr">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-google sticky-top">
+            <div class="container-fluid px-lg-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/icono.png" alt="Bootstrap" width="31" height="30">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#googleNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="googleNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0 gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" href="phone.html">Phones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fiwireles.html">Fi Wireless</a></li>
+                        <li class="nav-item"><a class="nav-link" href="watches.html">Watches & Trackers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="euburds.html">Earbuds</a></li>
+                        <li class="nav-item"><a class="nav-link" href="smarthome.html">Smart Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tablest.html">Tablets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accesories.html">Accessories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+                    </ul>
+                    <!-- busqueda, ubicacion, admin -->
+                    <div class="d-flex align-items-center">
+                        <button class="btn-icon-google" type="button" title="Buscar">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <a href="https://www.google.com/maps" class="btn-stores-google" title="Stores">
+                            <i class="bi bi-geo-alt-fill fs-6"></i>
+                            <span>Stores</span>
+                        </a>
+                        <a href="php/carrito.php" class="btn-icon-google posicion-carrito" title="Carrito de compras">
+                        <i class="bi bi-cart3"></i>
+                        <span class="badge-carrito" id="badgeCarrito"></span>
+                    </a>
+                        <a href="php/admin/login.php" class="btn-stores-google" title="Administración">
+                            <i class="bi bi-person-lock fs-6"></i>
+                            <span>Admin</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="contenedor-telefonos">
+        <section class="hero-pixel-container">
+            <div class="hero-pixel">
+                <video class="hero-pixel-video" autoplay loop muted playsinline>
+                    <source src="img/phone/video-banner.mp4" type="video/mp4">
+                </video>
+                <div class="hero-pixel-texto">
+                    <h1>Google Pixel</h1>
+                    <p>Ask more of your phone.</p>
+                    <div class="hero-pixel-botones">
+                        <a href="#linea_arriba" class="btn-hero-solido">Explore the lineup</a>
+                        <a href="https://www.youtube.com/watch?v=1xw8-y4duDQ" class="btn-hero-contorno"><i class="bi bi-play-circle"></i> Watch the film</a>
+                    </div>
+                </div>
+                <!--boton de flecha de replay-->
+                <button type="button" class="btn-replay-flotante" title="Replay">
+                    <i class="bi bi-arrow-counterclockwise"></i>
+                </button>
+            </div>
+        </section>
+    <section class="linea_arriba">
+        <div class="header_seccion mb-4" id="linea_arriba"><br><br>
+            <h2 class="titulo_redefines">Google Pixel redefines<br>what a phone does for you.</h2><br>
+            <div class="sub_linea mt-4">
+                <h3>Explore the full lineup.</h3>
+                <a href="#" class="btn_comparar">Compare all phones <i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+        <div class="carrusel_celis" id="productosScroll">
+            <div class="tarjeta">
+                <span class="badge badge_nuevo">New</span>
+                <div class="img_caja">
+                    <img src="img/phone/pro1.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Google Pixel 11 Pro</p>
+                <div class="precios_caja">
+                    <span class="precio_actual">From $499</span>
+                    <span class="precio_tachado">$1,000</span>
+                    <span class="badge_ahorro">Save up to $600</span>
+                </div>
+                <p class="subtexto_oferta">after typical trade in</p>
+                <form action="php/carrito.php" method="POST" class="d-inline">
+                    <input type="hidden" name="accion" value="agregar">
+                    <input type="hidden" name="imagen" value="img/phone/pro1.png">
+                    <input type="hidden" name="volver" value="phone.html">
+                    <input type="hidden" name="nombre" value="Google Pixel 11 Pro">
+                    <input type="hidden" name="precio" value="499.00">
+                    <button type="submit" class="btn_comprar">Pre-order <i class="bi bi-chevron-right"></i></button>
+                </form>
+            </div>
+            <div class="tarjeta">
+                <span class="badge badge_nuevo">New</span>
+                <div class="img_caja">
+                    <img src="img/phone/pro2.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Google Pixel 11 Pro Fold</p>
+                <div class="precios_caja">
+                    <span class="precio_actual">From $899</span>
+                    <span class="precio_tachado">$1,899</span>
+                    <span class="badge_ahorro">Save up to $1,000</span>
+                </div>
+                <p class="subtexto_oferta">after typical trade in</p>
+                <form action="php/carrito.php" method="POST" class="d-inline">
+                    <input type="hidden" name="accion" value="agregar">
+                    <input type="hidden" name="imagen" value="img/phone/pro2.png">
+                    <input type="hidden" name="volver" value="phone.html">
+                    <input type="hidden" name="nombre" value="Google Pixel 11 Pro Fold">
+                    <input type="hidden" name="precio" value="899.00">
+                    <button type="submit" class="btn_comprar">Pre-order <i class="bi bi-chevron-right"></i></button>
+                </form>
+            </div>
+            <div class="tarjeta">
+                <span class="badge badge_nuevo">New</span>
+                <div class="img_caja">
+                    <img src="img/phone/pro3.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Google Pixel 11</p>
+                <div class="precios_caja">
+                    <span class="precio_actual">From $399</span>
+                    <span class="precio_tachado">$899</span>
+                    <span class="badge_ahorro">Save up to $500</span>
+                </div>
+                <p class="subtexto_oferta">after typical trade in</p>
+                <form action="php/carrito.php" method="POST" class="d-inline">
+                    <input type="hidden" name="accion" value="agregar">
+                    <input type="hidden" name="imagen" value="img/phone/pro3.png">
+                    <input type="hidden" name="volver" value="phone.html">
+                    <input type="hidden" name="nombre" value="Google Pixel 11">
+                    <input type="hidden" name="precio" value="399.00">
+                    <button type="submit" class="btn_comprar">Pre-order <i class="bi bi-chevron-right"></i></button>
+                </form>
+            </div>
+            <div class="tarjeta">
+                <span class="badge badge_oferta">Special Offer</span>
+                <div class="img_caja">
+                    <img src="img/phone/pro3.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Google Pixel 10a</p>
+                <div class="precios_caja">
+                    <span class="precio_actual">From $424</span>
+                    <span class="precio_tachado">$499</span>
+                    <span class="badge_ahorro">Save $75</span>
+                </div>
+                <form action="php/carrito.php" method="POST" class="d-inline">
+                    <input type="hidden" name="accion" value="agregar">
+                    <input type="hidden" name="imagen" value="img/phone/pro3.png">
+                    <input type="hidden" name="volver" value="phone.html">
+                    <input type="hidden" name="nombre" value="Google Pixel 10a">
+                    <input type="hidden" name="precio" value="424.00">
+                    <button type="submit" class="btn_comprar">Buy <i class="bi bi-chevron-right"></i></button>
+                </form>
+            </div>
+            <div class="tarjeta">
+                <div class="img_caja">
+                    <img src="img/phone/pro4.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Google Pixel 10 Pro</p>
+                <div class="precios_caja"><span class="precio_actual">From $999</span></div>
+                <form action="php/carrito.php" method="POST" class="d-inline">
+                    <input type="hidden" name="accion" value="agregar">
+                    <input type="hidden" name="imagen" value="img/phone/pro4.png">
+                    <input type="hidden" name="volver" value="phone.html">
+                    <input type="hidden" name="nombre" value="Google Pixel 10 Pro">
+                    <input type="hidden" name="precio" value="999.00">
+                    <button type="submit" class="btn_comprar">Buy <i class="bi bi-chevron-right"></i></button>
+                </form>
+            </div>
+            <div class="tarjeta">
+                <div class="img_caja">
+                    <img src="img/phone/pro5.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Google Pixel 10 Pro Fold</p>
+                <div class="precios_caja"><span class="precio_actual">From $1,799</span></div>
+                <form action="php/carrito.php" method="POST" class="d-inline">
+                    <input type="hidden" name="accion" value="agregar">
+                    <input type="hidden" name="imagen" value="img/phone/pro5.png">
+                    <input type="hidden" name="volver" value="phone.html">
+                    <input type="hidden" name="nombre" value="Google Pixel 10 Pro Fold">
+                    <input type="hidden" name="precio" value="1799.00">
+                    <button type="submit" class="btn_comprar">Buy <i class="bi bi-chevron-right"></i></button>
+                </form>
+            </div>
+            <div class="tarjeta">
+                <div class="img_caja">
+                    <img src="img/phone/pro6.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Google Pixel 10</p>
+                <div class="precios_caja"><span class="precio_actual">From $799</span></div>
+                <form action="php/carrito.php" method="POST" class="d-inline">
+                    <input type="hidden" name="accion" value="agregar">
+                    <input type="hidden" name="imagen" value="img/phone/pro6.png">
+                    <input type="hidden" name="volver" value="phone.html">
+                    <input type="hidden" name="nombre" value="Google Pixel 10">
+                    <input type="hidden" name="precio" value="799.00">
+                    <button type="submit" class="btn_comprar">Buy <i class="bi bi-chevron-right"></i></button>
+                </form>
+            </div>
+            <div class="tarjeta tarjeta_extra">
+                <div class="img_caja">
+                    <img src="img/phone/pro7.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Compare</p>
+                <a href="#" class="btn_comprar">Compare phones <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta tarjeta_extra">
+                <div class="img_caja">
+                    <img src="img/phone/pro8.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Phone cases</p>
+                <a href="#" class="btn_comprar">Browse cases <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta tarjeta_extra">
+                <div class="img_caja">
+                    <img src="img/phone/pro9.png" alt="" srcset="">
+                </div>
+                <p class="titulo_prod">Accessories</p>
+                <a href="#" class="btn_comprar">Browse accessories <i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+        <!-- Progreso -->
+        <div class="barra_contenedor">
+            <div id="progressBar" class="barra_linea"></div>
+        </div>
+        <!-- Flechas -->
+        <div class="flechas_caja">
+            <button id="btnPrev" class="btn_flecha d-none"><i class="bi bi-arrow-left"></i></button>
+            <button id="btnNext" class="btn_flecha"><i class="bi bi-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <section class="seccion_ofertas">
+        <div class="ofertas_encabezado">
+            <h2>Your new Google Pixel with exclusive savings.</h2>
+            <a href="offers.html" class="btn_todas_ofertas">Shop all offers <i class="bi bi-chevron-right"></i></a>
+        </div>
+        <div class="grid_ofertas">
+            <div class="tarjeta_oferta">
+                <div class="icono_oferta">
+                    <i class="bi bi-arrow-left-right"></i>
+                </div>
+                <h3 class="titulo_oferta">Up to $600 back with eligible trade-in on Google Pixel 11 Pro unlocked phones.*</h3>
+                <p class="desc_oferta">Plus choose $250 off the new Google Pixel Watch 5 or $200 in Google Store Credit. Ends 8/27/26.</p>
+            </div>
+            <div class="tarjeta_oferta">
+                <div class="icono_oferta icono_fi">
+                    <i class=""><img src="img/fiwireless.jpg" alt="" srcset="" width="35" height="30"></i>
+                </div>
+                <h3 class="titulo_oferta">Get Google Pixel 11 Pro on us, plus $10/mo off your phone plan when you join Google Fi Wireless.§</h3>
+                <p class="desc_oferta">Get $300 off instantly and $799 back over 24 monthly credits. Plus, a $10/mo service credit for 2 years on the Unlimited Premium plan. Ends 10/06/26.</p>
+            </div>
+            <div class="tarjeta_oferta">
+                <div class="icono_oferta icono_ai">
+                    <i class=""><img src="img/logogrmini.png" width="35" height="30" alt=""></i>
+                </div>
+                <h3 class="titulo_oferta">Google Pixel 11 Pro comes with 6 months of Google AI Pro on us ($119 value).§§</h3>
+                <p class="desc_oferta">Plus additional premium Google services with any unlocked or carrier phone. Ends 10/31/27.</p>
+            </div>
+        </div>
+    </section>
+
+<!--Google Pixel Camera-->    
+<section class="seccion_hero_camara">
+  <div class="container text-center pt-5 pb-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <p class="seccion_subtitulo mb-2">Google Pixel Camera</p>
+        <h1 class="titulo_camara mb-3">Helps you focus<br>on the moment.</h1>
+        <p class="desc_camara mb-4">
+          The Google Pixel Camera does the heavy lifting for you, making incredible photos and videos feel completely effortless, so you can stay present in the moment.
+        </p>
+        <div>
+          <a href="#" class="btn_explorar">Explore the Google Pixel Camera</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper_fondo_telefono">
+    <img src="img/phone/baner gigante.png" alt="Google Pixel Camera" class="imagen_fondo_celular">
+
+    <div class="container contenido_sobre_fondo">
+      <div class="row g-4 align-items-end">
+        <div class="col-12 col-lg-5">
+          <div class="tarjeta_caja tarjeta_bg_crema">
+            <div class="contenedor_media">
+              <video class="media_tarjeta" autoplay loop muted playsinline>
+                <source src="img/phone/collagevideo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="d-flex justify-content-end p-3">
+              <button class="btn_circulo" id="btnPausar" aria-label="Pause animation">
+                <i class="bi bi-pause-fill"></i>
+              </button>
+            </div>
+          </div>
+          <p class="texto_tarjeta px-2 mt-3 text-start">
+            With one tap, Google Pixel captures a video and photos, then automatically edits and curates a high-quality collection that's ready to share.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="tarjeta_caja">
+            <div class="contenedor_media">
+              <video class="media_tarjeta" autoplay loop muted playsinline>
+                <source src="img/phone/lunacamara.mp4" type="video/mp4">
+              </video>
+              <button class="btn_circulo btn_overlay" id="btnRotar" aria-label="Rotate view">
+                <i class="bi bi-arrow-repeat"></i>
+              </button>
+            </div>
+          </div>
+          <p class="texto_tarjeta mt-3 text-start">
+            Incredible zoom across the full lineup. With up to 120x on Pro.<sup>1</sup>
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="tarjeta_caja">
+            <div class="contenedor_media">
+              <img src="img/phone/vibrantprincipal.jpg" alt="Low light portrait" class="media_tarjeta">
+            </div>
+          </div>
+          <p class="texto_tarjeta mt-3 text-start">
+            Vibrant photos and videos even in tricky, dim lighting.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Gemini inteligente-->
+<section class="gemini-feature text-center py-5">
+  <div class="container mb-5">
+    <p class="section-subtitle mb-2">Designed for Gemini Intelligence</p>
+    <h2 class="section-title mb-3">Get more done,<br>without doing more.</h2>
+    <p class="section-description mx-auto mb-4" style="max-width: 600px;">
+      Pixel 11 is supercharged to give you personalized help with everyday tasks so you can easily find info, take action, and brainstorm ideas.<sup>2</sup> It feels effortless and looks stunning.
+    </p>
+    <div>
+      <a href="#" class="btn-cta-outline">Explore Gemini Intelligence</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-md-6">
+        <div class="feature-card feature-card--sage">
+          <video class="feature-card__video" autoplay loop muted playsinline>
+            <source src="img/phone/geminiitellice.mp4" type="video/mp4">
+          </video>
+          <button class="media-control-btn" aria-label="Pause">
+            <i class="bi bi-pause-fill"></i>
+          </button>
+        </div>
+        <p class="feature-card__caption text-start mt-3">
+          Gemini Intelligence predicts what you need, and helps take care of it for you.<sup>2</sup>
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="feature-card feature-card--pink">
+          <video class="feature-card__video" autoplay loop muted playsinline>
+            <source src="img/phone/checkgmail.mp4" type="video/mp4">
+          </video>
+          <button class="media-control-btn" aria-label="Play">
+            <i class="bi bi-play-fill"></i>
+          </button>
+        </div>
+        <p class="feature-card__caption text-start mt-3">
+          It works across your apps to help finish things faster.<sup>3</sup>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- footer -->
+    <footer class="footer-real">
+        <div class="footer-contenido">
+            <h2 class="footer-titulo">Google Store</h2>
+            
+            <div class="footer-columnas">
+                <div class="col-footer">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Magazine</a></li>
+                        <li><a href="#">Pixel for Business</a></li>
+                        <li><a href="#">Official Merch</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Orders</h5>
+                    <ul>
+                        <li><a href="#">Tracking an order</a></li>
+                        <li><a href="#">Shipping options</a></li>
+                        <li><a href="#">Country availability</a></li>
+                        <li><a href="#">Pixel Care+</a></li>
+                        <li><a href="#">Trade-in</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Get help</a></li>
+                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#">Installations</a></li>
+                        <li><a href="#">Disability Support</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Send Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Sustainability</h5>
+                    <ul>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Device recycling</a></li>
+                        <li><a href="#">Refurbished devices</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <span class="pais-select"><img src="img/bandera.png" alt="US Flag" width="20" height="20"> United States</span>
+                    <a href="#">Privacy</a>
+                    <a href="#">Google Nest Commitment to Privacy</a>
+                    <a href="#">Sales Terms</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrito-badge.js"></script>
+</body>
+</html>

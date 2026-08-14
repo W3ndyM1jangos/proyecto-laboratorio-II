@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Store</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <div class="navbarr">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-xl navbar-google sticky-top navbar">
+        <div class="container-fluid px-lg-0">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icono.png" alt="Bootstrap" width="31" height="30">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#googleNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="googleNav">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0 gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="phone.html">Phones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fiwireles.html">Fi Wireless</a></li>
+                    <li class="nav-item"><a class="nav-link" href="watches.html">Watches & Trackers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="euburds.html">Earbuds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="smarthome.html">Smart Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tablest.html">Tablets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accesories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+                </ul>
+                <!-- busquedad, ubicacion, admin -->
+                <div class="d-flex align-items-center">
+                    <button class="btn-icon-google" type="button" title="Buscar">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <a href="https://www.google.com/maps" class="btn-stores-google" title="Stores">
+                        <i class="bi bi-geo-alt-fill fs-6"></i>
+                        <span>Stores</span>
+                    </a>
+                    <a href="php/carrito.php" class="btn-icon-google posicion-carrito" title="Carrito de compras">
+                        <i class="bi bi-cart3"></i>
+                        <span class="badge-carrito" id="badgeCarrito"></span>
+                    </a>
+                    <a href="php/admin/login.php" class="btn-stores-google" title="Administración">
+                        <i class="bi bi-person-lock fs-6"></i>
+                        <span>Admin</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+<!--Video 1-->
+<section class="banner-principal">
+    <video class="video-fondo" autoplay loop muted playsinline>
+        <source src="img/videos/banner-principal.mp4" type="video/mp4">
+    </video>
+    <div class="contenido-banner">
+        <h1 class="display-3 fw-medium titulo">Google Pixel 11.</h1>
+        <h2 class="display-3 fw-medium titulo">Pre-order August 12.</h2>
+        <p class="my-3 fs-5 descripcion">
+            Get an <strong>exclusive offer</strong> on August 12 from the Google Store when you sign up for emails.
+        </p>
+    </div>
+</section>
+<!--tarjetas popular on the google store-->
+<section class="populartarje">
+<section class="popular-section my-5 position-relative">
+    <div class="container">
+        <h2 class="text-center fw-medium mb-4">Popular on the Google Store.</h2>
+    <div class="carousel-wrapper position-relative">
+            <!-- Flecha izquierda -->
+            <button class="nav-arrow prev-arrow d-none" id="btnPrev" aria-label="Previous">
+                <i class="bi bi-arrow-left"></i>
+            </button>
+            <!--Contenedro horizontal-->
+            <div class="scroll-container" id="productosScroll">
+                <div class="d-flex gap-3">
+            
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/pixel10pro.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Pixel 10 Pro and Pro XL</h6>
+                        <p class="text-secondary small mb-2">From $999</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/pixel10pro.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Pixel 10 Pro and Pro XL">
+                            <input type="hidden" name="precio" value="999.00">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/pixel10profold.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Pixel 10 Pro Fold</h6>
+                        <p class="text-secondary small mb-2">From $1,799</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/pixel10profold.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Pixel 10 Pro Fold">
+                            <input type="hidden" name="precio" value="1799.00">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/pixel10.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Pixel 10</h6>
+                        <p class="text-secondary small mb-2">From $799</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/pixel10.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Pixel 10">
+                            <input type="hidden" name="precio" value="799.00">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image position-relative">
+                           <a href=""><img src="img/pixel10a.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Pixel 10a</h6>
+                        <p class="text-secondary small mb-2">From $499</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/pixel10a.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Pixel 10a">
+                            <input type="hidden" name="precio" value="499.00">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/pixelwatch4.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Pixel Watch 4</h6>
+                        <p class="text-secondary small mb-2">From $349.99</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/pixelwatch4.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Pixel Watch 4">
+                            <input type="hidden" name="precio" value="349.99">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/pixelbuds2a.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Pixel Buds 2a</h6>
+                        <p class="text-secondary small mb-2">$129</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/pixelbuds2a.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Pixel Buds 2a">
+                            <input type="hidden" name="precio" value="129.00">
+                            <button type="submit" class="buy-link btn btn-link">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image position-relative">
+                            <a href=""><img src="img/fitbitair.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Google Fitbit Air</h6>
+                        <p class="text-secondary small mb-2">From $99.99</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/fitbitair.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Google Fitbit Air">
+                            <input type="hidden" name="precio" value="99.99">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/fiwireless.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Google Fi Wireless</h6>
+                        <p class="text-secondary small mb-2">&nbsp;</p>
+                        <a href="#" class="buy-link">Learn more <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image position-relative">
+                            <a href=""><img src="img/homespeaker.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Google Home Speaker</h6>
+                        <p class="text-secondary small mb-2">$99.99</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/homespeaker.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Google Home Speaker">
+                            <input type="hidden" name="precio" value="99.99">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/netscam.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Nest Cam Outdoor (wired, 2nd gen)</h6>
+                        <p class="text-secondary small mb-2">From $149.99</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/netscam.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Nest Cam Outdoor (wired, 2nd gen)">
+                            <input type="hidden" name="precio" value="149.99">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/netscamindoor.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Nest Cam Indoor (wired, 3rd gen)</h6>
+                        <p class="text-secondary small mb-2">$99.99</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/netscamindoor.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Nest Cam Indoor (wired, 3rd gen)">
+                            <input type="hidden" name="precio" value="99.99">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                    <div class="product-card-item">
+                        <div class="product-image">
+                            <a href=""><img src="img/netsdoorbell.jpg" alt="Nest Doorbell"></a>
+                        </div>
+                        <h6 class="fw-bold mt-2 mb-1">Nest Doorbell (wired, 3rd gen)</h6>
+                        <p class="text-secondary small mb-2">$179.99</p>
+                        <form action="php/carrito.php" method="POST" class="d-inline">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/netsdoorbell.jpg">
+                            <input type="hidden" name="volver" value="index.html">
+                            <input type="hidden" name="nombre" value="Nest Doorbell (wired, 3rd gen)">
+                            <input type="hidden" name="precio" value="179.99">
+                            <button type="submit" class="buy-link btn btn-link p-0 border-0">Buy</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div class="scroll-progress-track">
+            <div class="scroll-progress-bar" id="progressBar"></div>
+        </div>
+            <!-- Flecha derecha -->
+            <button class="nav-arrow next-arrow" id="btnNext" aria-label="Next">
+                <i class="bi bi-arrow-right"></i>
+            </button>
+
+        </div>
+    </div>
+</section>
+</section>
+<!--Discover the world of Pixel.-->
+<section class="articulos">
+    <br><br>
+    <h2 style="text-align: center;">Discover the world of Pixel.</h2>
+    <div style="position: relative; max-width: 1200px; margin: 0 auto;">
+        <button class="flecha prev" onclick="moverIzquierda()"><i class="bi bi-arrow-left"></i></button>
+        <button class="flecha next" onclick="moverDerecha()"><i class="bi bi-arrow-right"></i></button>
+
+        <div id="carrusel" class="carrusel-contenedor">
+            <div class="tarjeta">
+                <img src="img/4detres.jpg.png" alt="Pixel 10">
+                <h6>A guide to finding your perfect Pixel 10.</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/meetgoogle.jpg" alt="Pixel 10a">
+                <h6>Meet Google Pixel 10a: more of what you need, priced just right.</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/yourgoogle.jpg" alt="My Pixel app">
+                <h6>Your Pixel's new best friend: Introducing the My Pixel app.</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/helpyou.jpg" alt="Helpful info">
+                <h6>Helpful info, right when you need it.</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/top10.jpg" alt="Made by Google 2025">
+                <h6>Top 10 reveals from the Made by Google 2025 event.</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/meet.jpg" alt="Pixel 10 series">
+                <h6>Meet the Google Pixel 10 series. A new era of "wow."</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/setand.jpg" alt="Pixel Watch 4">
+                <h6>Set and stick to your fitness goals with the Pixel Watch 4.</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/levelup.jpg" alt="Camera Coach">
+                <h6>Level up your photography skills with Camera Coach.</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/createamazing.jpg" alt="Gemini AI">
+                <h6>Create amazing AI videos with Gemini, simply by describing what you want to see.</h6>
+                <a href="#">Read article <i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--5 tarjetas de imagenes  -->
+<section class="googlepixel">
+<section class="seccion-destacados">
+    <div class="grid-tres">
+        <div class="tarjeta-promo gris">
+            <h3>Google Pixel 10 Pro and Pro XL</h3>
+            <p>Meet the new status pro.</p>
+            <a href="#" class="btn-aprender">Learn more</a>
+            <img src="img/pixel1.png" alt="Pixel 10 Pro">
+        </div>
+
+        <div class="tarjeta-promo azul-claro">
+            <h3>Google Pixel 10</h3>
+            <p>Do spectacular, on the regular.</p>
+            <a href="#" class="btn-aprender">Learn more</a>
+            <img src="img/pixel2.png" alt="Pixel 10">
+        </div>
+
+        <div class="tarjeta-promo morado-claro">
+            <h3>Google Pixel 10a</h3>
+            <p>The real deal.</p>
+            <a href="#" class="btn-aprender">Learn more</a>
+            <img src="img/pixel3.png" alt="Pixel 10a">
+        </div>
+    </div>
+</section>
+
+<section class="seccion-destacados">
+    <div class="tarjeta-banner verde-claro">
+        <h3>Google Pixel 10 Pro Fold</h3>
+        <p>Unfold extraordinary.</p>
+        <a href="#" class="btn-aprender">Learn more</a>
+        <img src="img/pixel4.png" alt="Pixel 10 Pro Fold">
+    </div>
+</section>
+<section class="seccion-destacados">
+    <div class="grid-tres">
+        <div class="tarjeta-promo gris-reloj">
+            <h3>Google Pixel Watch 4</h3>
+            <p>Precision crafted. Performance ready.</p>
+            <a href="#" class="btn-aprender">Learn more</a>
+            <img src="img/pixel5.png" alt="Pixel Watch 4">
+        </div>
+        <div class="tarjeta-promo azul-fitbit">
+            <h3>Google Fitbit Air</h3>
+            <p>Lighter gets mightier.</p>
+            <a href="#" class="btn-aprender">Learn more</a>
+            <img src="img/pixel6.jpg" alt="Fitbit Air">
+        </div>
+        <div class="tarjeta-promo morado-buds">
+            <h3>Google Pixel Buds 2a</h3>
+            <p>Unbelievable sound. Unreal value.</p>
+            <a href="#" class="btn-aprender">Learn more</a>
+            <img src="img/pixel7.png" alt="Pixel Buds 2a">
+        </div>
+    </div>
+</section>
+</section>
+<section class="destacado">
+<section class="seccion-destacados">
+    <div class="grid-dos">
+
+        <div class="tarjeta-info">
+            <div class="imagen-box">
+                <img src="img/piexeldrop.jpg" alt="Pixel Drop">
+            </div>
+            <h4>Continuous updates. Constant delight.</h4>
+            <p>Every Pixel Drop brings you new and improved features, including the latest AI innovations.</p>
+            <a href="#" class="enlace-azul">Learn more <i class="bi bi-chevron-right"></i></a>
+        </div>
+
+        <div class="tarjeta-info">
+            <div class="imagen-box">
+                <img src="img/swichover.jpg" alt="Switch to Pixel">
+            </div>
+            <h4>Switch over. Don't start over.</h4>
+            <p>Google makes switching simple – from transferring data, to using Pixel features, to understanding what AI can help you do.</p>
+            <a href="#" class="enlace-azul">Learn more <i class="bi bi-chevron-right"></i></a>
+        </div>
+
+    </div>
+</section>
+</section>
+<!-- categorias populares-->
+    <section class="seccion-categorias">
+        <h2>Shop popular categories.</h2>
+        <div class="grid-categorias">
+            <div class="tarjeta-categoria">
+                <img src="img/shop1.png" alt="Watches & Trackers">
+                <p>Watches & Trackers</p>
+            </div>
+            <div class="tarjeta-categoria">
+                <img src="img/sho2.png" alt="Earbuds">
+                <p>Earbuds</p>
+            </div>
+            <div class="tarjeta-categoria">
+                <img src="img/shop3.png" alt="Cameras">
+                <p>Cameras</p>
+            </div>
+            <div class="tarjeta-categoria">
+                <img src="img/shop4.png" alt="Doorbells">
+                <p>Doorbells</p>
+            </div>
+        </div>
+    </section>
+    <!-- tarjetas de colores 3 -->
+    <section class="seccion-nest">
+        <div class="grid-tres-tarjetas">
+            <div class="tarjeta-promo rosa-claro">
+                <div class="promo-texto">
+                    <h3>Google Home Speaker</h3>
+                    <p>Brilliant sound. Gemini magic.<sup>§§</sup></p>
+                    <a href="#" class="btn-aprender">Learn more</a>
+                </div>
+                <div class="promo-img">
+                    <img src="img/popular1.jpg" alt="Google Home Speaker">
+                </div>
+            </div>
+
+            <div class="tarjeta-promo verde-camara">
+                <div class="promo-texto">
+                    <h3>Google Nest Cam Outdoor (wired, 2nd gen)</h3>
+                    <p>Outsmart the unknown with 2K and Gemini.</p>
+                    <a href="#" class="btn-aprender">Learn more</a>
+                </div>
+                <div class="promo-img">
+                    <img src="img/popular2.png" alt="Nest Cam Outdoor">
+                </div>
+            </div>
+
+            <div class="tarjeta-promo beige-timbre">
+                <div class="promo-texto">
+                    <h3>Google Nest Doorbell (wired, 3rd gen)</h3>
+                    <p>2K sharp. Gemini smarts. At your door.</p>
+                    <a href="#" class="btn-aprender">Learn more</a>
+                </div>
+                <div class="promo-img">
+                    <img src="img/popular3.png" alt="Nest Doorbell">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- google fit mech-->
+    <section class="seccion-banners">
+        <div class="banner-horizontal">
+            <div class="banner-info">
+                <span class="fi-marca">Google Fi Wireless</span>
+                <h2>Google innovation in your phone plan.</h2>
+                <p>Do more of what you love with your favorite Pixel devices. Google Fi Wireless offers ultra-reliable 5G speed and industry-leading security. Plus, plenty of perks at no extra cost.<sup>2</sup></p>
+                <a href="#" class="btn-aprender">Learn more</a>
+            </div>
+            <div class="banner-media">
+                <img src="img/fiwerel1.jpg" alt="Google Fi Wireless">
+            </div>
+        </div>
+
+        <!-- tarejtas3-->
+        <div class="banner-horizontal reverse">
+            <div class="banner-media">
+                <img src="img/fiwere2.jpg" alt="Google Basketballs">
+            </div>
+            <div class="banner-info">
+                <span class="merch-logo">Google Store</span>
+                <h2>For the real Google fans.</h2>
+                <a href="#" class="btn-aprender">Explore merch</a>
+            </div>
+        </div>
+    </section>
+    <!-- imagen grande-->
+    <section class="seccion-boletin">
+        <h3>You're all set to receive the latest news and offers from the Google Store.</h3>
+    </section>
+    <!-- porque comprar -->
+    <section class="negrita">
+        <section class="seccion-why-buy">
+            <h2>Why buy on the Google Store.</h2>
+            <div class="grid-cuatro-beneficios">
+                <div class="tarjeta-beneficio">
+                    <div class="icono-box verde">
+                        <i class="bi bi-calculator"></i>
+                    </div>
+                    <h4>Finance with 0% APR for 36 months.<sup>3</sup></h4>
+                    <a href="#" class="btn-aprender">Learn more</a>
+                </div>
+                <div class="tarjeta-beneficio">
+                    <div class="icono-box amarillo">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <h4>Free shipping.<sup>†</sup></h4>
+                    <a href="#" class="btn-aprender">Learn more</a>
+                </div>
+                <div class="tarjeta-beneficio">
+                    <div class="icono-box verde-tag">
+                        <i class="bi bi-tag"></i>
+                    </div>
+                    <h4>Get our price match promise.</h4>
+                    <a href="#" class="btn-aprender">Learn more</a>
+                </div>
+                <div class="tarjeta-beneficio">
+                    <div class="icono-box amarillo-return">
+                        <i class="bi bi-arrow-counterclockwise"></i>
+                    </div>
+                    <h4>Free and easy returns.</h4>
+                    <a href="#" class="btn-aprender">Learn more</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- informacion legal -->
+    <section class="seccion-texto-legal">
+        <div class="contenedor-legales">
+            <ol class="lista-numerada">
+                <li>Special Edition available while supplies last. Not available in all countries.</li>
+                <li>5G service not available in all areas; speed and performance depend on factors like device configuration and capabilities, network traffic location, signal strength and signal obstruction. Actual results may vary. For more information visit <a href="https://g.co/fi/broadband-facts" target="_blank">g.co/fi/broadband-facts</a>.</li>
+                <li>0% APR with Google Store Financing on Phone and Qualifying Purchases: Google Store Financing is a credit card issued and serviced solely by Synchrony Bank and can be used only for purchases at store.google.com. Credit card application decisions are made solely by Synchrony Bank. 0% APR with equal monthly payments is available every day on Phone Purchases (as defined in the credit card agreement). At times, we may offer Equal Pay Financing promotions with 0% APR on identified Qualifying Purchases (and all other items purchased in the same sales transaction). No interest will be charged on Phone Purchases or Qualifying Purchases and equal monthly payments are required equal to the total Phone or Qualifying Purchase amount divided by the number of months in the applicable promotional period, rounded to the whole cent. Any estimated monthly payments shown on a Phone Purchase or Qualifying Purchase may be shown rounded to the next whole dollar (for ease of display) or may be shown rounded to the whole cent. See your billing statement for your actual equal monthly payment required, which will be rounded to the whole cent. If you make your payments by the due date each month, the monthly payment (adjusted for taxes, delivery and any other items purchased in the same sale transaction) should allow you to pay off the Phone Purchase or Qualifying Purchase within the number of months advertised if this balance is the only balance on your account during the promotional period. If you have other balances on your account, this monthly payment will be added to the monthly payment applicable to those balances. New Accounts as of 6/27/24: Purchase APR for Phone Purchases 0.00%. Purchase APR for Other Purchases 34.99%. Penalty APR 39.99%. Min Interest Charge $2. Subject to credit approval.</li>
+            </ol>
+            <ul class="lista-simbolos">
+                <li>* Your Pixel will generally receive Pixel Drops during the applicable Android update and support periods for the phone. See <a href="https://g.co/pixel/updates" target="_blank">g.co/pixel/updates</a> for details. Availability of some Pixel Drops may vary by phone and device model.</li>
+                <li>† All orders that deliver free of charge use the lowest-cost option unless otherwise noted.</li>
+                <li>§ Google Fitbit Air works with most phones running on Android 11 or higher and Apple iOS 16.4 or higher. Google Health and Google Fitbit Air require Google Account, Google Health app and internet connection. Feature availability varies; some features require Google Health Premium membership. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary. Not intended for medical purposes. See <a href="https://g.co/health/fitbit-air" target="_blank">g.co/health/fitbit-air</a> and <a href="https://g.co/fitbit/compatibility" target="_blank">g.co/fitbit/compatibility</a> for more information.</li>
+                <li>‡ Compared to other Google wearable devices.</li>
+                <li>§§ Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in select countries and languages. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.</li>
+                <li>** Available only to those who sign up with a Google Account for marketing emails from store.google.com between 7/15/2026 at 10:00am PT and 8/7/2026 at 11:59pm PT. Promotional code expires 8/27/2026 at 11:59 pm PT; while supplies last. Must be US resident, aged 18 years or older, with US shipping address. Must be redeemed on Google Store only. Limit 1 per customer. The coupon code can only be used for purchase of the advertised specified Pixel 11 (unlocked or Fi) devices and cannot be applied to any other devices, Google subscriptions, services nor Google Merchandise products. Promotional code and redemption instructions will be emailed after sign-up on 8/11/2026.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer con iconos-->
+    <footer class="footer-real">
+        <div class="footer-contenido">
+            <h2 class="footer-titulo">Google Store</h2>
+            
+            <div class="footer-columnas">
+                <div class="col-footer">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Magazine</a></li>
+                        <li><a href="#">Pixel for Business</a></li>
+                        <li><a href="#">Official Merch</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Orders</h5>
+                    <ul>
+                        <li><a href="#">Tracking an order</a></li>
+                        <li><a href="#">Shipping options</a></li>
+                        <li><a href="#">Country availability</a></li>
+                        <li><a href="#">Pixel Care+</a></li>
+                        <li><a href="#">Trade-in</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Get help</a></li>
+                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#">Installations</a></li>
+                        <li><a href="#">Disability Support</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Send Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Sustainability</h5>
+                    <ul>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Device recycling</a></li>
+                        <li><a href="#">Refurbished devices</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <span class="pais-select"><img src="img/bandera.png" alt="US Flag" width="20px" height="20px"> United States</span>
+                    <a href="#">Privacy</a>
+                    <a href="#">Google Nest Commitment to Privacy</a>
+                    <a href="#">Sales Terms</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+            
+    <!--Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrito-badge.js"></script>
+</body>
+</html>

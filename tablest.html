@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Tablet, Help in Your Hand - Google Store</title> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/tables.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbarr">
+        <nav class="navbar navbar-expand-xl navbar-google sticky-top">
+            <div class="container-fluid px-lg-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/icono.png" alt="Google Store" width="31" height="30">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#googleNav" aria-controls="googleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="googleNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0 gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" href="phone.html">Phones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fiwireles.html">Fi Wireless</a></li>
+                        <li class="nav-item"><a class="nav-link" href="watches.html">Watches & Trackers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="euburds.html">Earbuds</a></li>
+                        <li class="nav-item"><a class="nav-link" href="smarthome.html">Smart Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tablest.html">Tablets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accesories.html">Accessories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+                    </ul>
+                    
+                    <!-- Búsqueda, ubicación, carrito, admin -->
+                    <div class="d-flex align-items-center">
+                        <button class="btn-icon-google" type="button" title="Buscar">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <a href="https://www.google.com/maps" class="btn-stores-google" title="Stores" target="_blank">
+                            <i class="bi bi-geo-alt-fill fs-6"></i>
+                            <span>Stores</span>
+                        </a>
+                        <a href="php/carrito.php" class="btn-icon-google posicion-carrito" title="Carrito de compras">
+                        <i class="bi bi-cart3"></i>
+                        <span class="badge-carrito" id="badgeCarrito"></span>
+                    </a>
+                        <a href="php/admin/login.php" class="btn-stores-google" title="Administración">
+                            <i class="bi bi-person-lock fs-6"></i>
+                            <span>Admin</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="contenedor-centrado">
+            <section class="seccion-hero">
+                <div class="tarjeta-principal">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5">
+                            <h1 class="titulo-grande">Help in your hand. And at home.</h1>
+                            <p class="precio-texto">From $399</p>
+                            <p class="pago-cuotas">or $33.25/month with 12-month financing*</p>
+                            
+                            <form action="php/carrito.php" method="POST">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="">
+                            <input type="hidden" name="volver" value="tablest.html">
+                                <input type="hidden" name="producto_id" value="pixel-tablet">
+                                <input type="hidden" name="nombre" value="Pixel Tablet">
+                                <input type="hidden" name="precio" value="399">
+                                <button type="submit" class="boton-azul">Get notified</button>
+                            </form>
+                        </div>
+                        <div class="col-md-7 text-center">
+                            <video class="imagen-fluida" autoplay loop muted playsinline>
+                                <source src="img/tables/video1.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion-banner">
+                <div class="banner-gris d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <p class="texto-banner mb-0">Apply the value of your old tablet to your new tablet. <span>Trade in your tablet and save.</span></p>
+                    </div>
+                    <a href="#" class="enlace-azul text-nowrap">Get estimate for trade-in &gt;</a>
+                </div>
+            </section>
+            <section class="seccion-caracteristicas text-center">
+                <h2 class="subtitulo-seccion">The tablet only Google could make.</h2>
+                <a href="#" class="enlace-azul d-block mb-4">Explore the tablet</a>
+                <div class="row row-cols-2 row-cols-md-5 g-3">
+                    <div class="col"><div class="caja-icono"><p>Get the Charging Speaker Dock for extra flexibility.</p></div></div>
+                    <div class="col"><div class="caja-icono"><p>Personalized help with Google Tensor G2.</p></div></div>
+                    <div class="col"><div class="caja-icono"><p>Integrated entertainment with Google TV and more.<sup>1</sup></p></div></div>
+                    <div class="col"><div class="caja-icono"><p>Pairs with Pixel phones and earbuds.<sup>2</sup></p></div></div>
+                    <div class="col"><div class="caja-icono"><p>Easily control your home with the Google Home app.<sup>3</sup></p></div></div>
+                </div>
+            </section>
+            <section class="seccion-pantalla">
+                <div class="tarjeta-beige text-center">
+                    <h2 class="titulo-caja text-start mb-4">Immersive 11-inch screen.<sup>4</sup></h2>
+                    <img src="img/tables/tabl1.jpg" alt="Pantalla Tablet" class="imagen-pantalla">
+                </div>
+            </section>
+            <section class="seccion-grid">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="tarjeta-beige">
+                            <h3 class="titulo-caja mb-3">Long-lasting adaptive battery.<sup>5</sup></h3>
+                            <img src="img/tables/im2.jpg" alt="Batería Adaptativa" class="imagen-fluida">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tarjeta-beige text-center">
+                            <img src="img/tables/g2.jpg" class="imagen-chip mb-3 g2">
+                            <h3 class="titulo-caja">Faster and more secure with Tensor G2.</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion-grid">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="tarjeta-beige">
+                            <h3 class="titulo-caja mb-3">Easy to dock and undock.</h3>
+                            <img src="img/tables/tabl2.jpg" alt="Docking Tablet" class="imagen-fluida">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tarjeta-foto">
+                            <h3 class="titulo-caja p-4 position-absolute top-0 start-0 text-white">Amazing entertainment in full view.</h3>
+                            <img src="img/tables/tabl3.jpg" alt="Entretenimiento" class="imagen-portada">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- video dock -->
+            <section class="seccion-dock text-center">
+                <span class="etiqueta-gris mb-2 d-inline-block">Charging Speaker Dock</span>
+                <h2 class="subtitulo-seccion mb-2">The dock that helps you do more.</h2>
+                <a href="#" class="enlace-azul d-block mb-4">View in your space</a>
+
+                <div class="tarjeta-video">
+                    <img src="img/tables/thedockvideo.png" alt="Video Dock" class="imagen-fluida">
+                </div>
+            </section>
+
+            <section class="seccion-rendimiento">
+                <span class="etiqueta-gris d-block text-center mb-2">Performance and entertainment</span>
+                <h2 class="subtitulo-seccion text-center mb-4">Incredibly fast. Uniquely entertaining.</h2>
+
+                <div class="tarjeta-beige p-0 overflow-hidden">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-6 p-4 p-md-5">
+                            <h3 class="titulo-caja mb-3">The power and speed of Google Tensor G2.</h3>
+                            <p class="texto-cuerpo">The Pixel Tablet is the first tablet with the Tensor G2 chip built in. It features Google AI, fast and smooth streaming, high-quality video calls, accurate voice typing, multitasking with split-screen, and more.</p>
+                            <a href="#" class="enlace-azul">Learn more &gt;</a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <video class="imagen-fluida" autoplay loop muted playsinline>
+                                <source src="img/tables/videog2.mp4" type="video/mp4">
+                                Tu navegador no soporta reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- accesorios  -->
+            <section class="seccion-accesorios">
+                <h2 class="subtitulo-seccion text-center">Add a little extra help.</h2>
+                <a href="#" class="enlace-azul d-block text-center mb-4">Shop all accessories &gt;</a>
+                
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="tarjeta-producto">
+                            <img src="img/tables/tablets1.png" alt="Pixel Tablet Case" class="imagen-producto">
+                            <h4 class="nombre-producto">Pixel Tablet Case</h4>
+                            <p class="precio-producto">$79</p>
+                            <p class="pago-cuotas">or make 4 payments of $19.75</p>
+                            <form action="php/carrito.php" method="POST">
+                                <input type="hidden" name="id" value="101">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/tables/tablets1.png">
+                            <input type="hidden" name="volver" value="tablest.html">
+                                <input type="hidden" name="nombre" value="Pixel Tablet Case">
+                                <input type="hidden" name="precio" value="79">
+                                <button type="submit" class="boton-azul w-100">Buy</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="tarjeta-producto">
+                            <img src="img/tables/tablets2.png" alt="Charging Speaker Dock" class="imagen-producto">
+                            <h4 class="nombre-producto">Charging Speaker Dock</h4>
+                            <p class="precio-producto">$129</p>
+                            <p class="pago-cuotas">or make 4 payments of $32.25</p>
+                            <form action="php/carrito.php" method="POST">
+                                <input type="hidden" name="id" value="102">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/tables/tablets2.png">
+                            <input type="hidden" name="volver" value="tablest.html">
+                                <input type="hidden" name="nombre" value="Charging Speaker Dock">
+                                <input type="hidden" name="precio" value="129">
+                                <button type="submit" class="boton-azul w-100">Buy</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="tarjeta-producto">
+                            <img src="img/tables/tablets3.png" alt="Glass Screen Protector" class="imagen-producto">
+                            <h4 class="nombre-producto">Speck ShieldView Glass Screen Protector</h4>
+                            <p class="precio-producto">$49.95</p>
+                            <p class="pago-cuotas">or make 4 payments of $12.49</p>
+
+                            <form action="php/carrito.php" method="POST">
+                                <input type="hidden" name="id" value="103">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/tables/tablets3.png">
+                            <input type="hidden" name="volver" value="tablest.html">
+                                <input type="hidden" name="nombre" value="Speck Glass Screen Protector">
+                                <input type="hidden" name="precio" value="49.95">
+                                <button type="submit" class="boton-azul w-100">Buy</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="tarjeta-producto">
+                            <img src="img/tables/tablets4.png" alt="StandyShell Case" class="imagen-producto">
+                            <h4 class="nombre-producto">Speck StandyShell Case</h4>
+                            <p class="precio-producto">$49.95</p>
+                            <p class="pago-cuotas">or make 4 payments of $12.49</p>
+
+                            <form action="php/carrito.php" method="POST">
+                                <input type="hidden" name="id" value="104">
+                            <input type="hidden" name="accion" value="agregar">
+                            <input type="hidden" name="imagen" value="img/tables/tablets4.png">
+                            <input type="hidden" name="volver" value="tablest.html">
+                                <input type="hidden" name="nombre" value="Speck StandyShell Case">
+                                <input type="hidden" name="precio" value="49.95">
+                                <button type="submit" class="boton-azul w-100">Buy</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> 
+    </main>
+
+    <!-- SECCIÓN TEXTO LEGAL -->
+    <section class="seccion-texto-legal">
+        <div class="contenedor-legales">
+            <ol class="lista-numerada">
+                <li>Special Edition available while supplies last. Not available in all countries.</li>
+                <li>5G service not available in all areas; speed and performance depend on factors like device configuration and capabilities, network traffic location, signal strength and signal obstruction. Actual results may vary. For more information visit <a href="https://g.co/fi/broadband-facts" target="_blank">g.co/fi/broadband-facts</a>.</li>
+                <li>0% APR with Google Store Financing on Phone and Qualifying Purchases: Google Store Financing is a credit card issued and serviced solely by Synchrony Bank and can be used only for purchases at store.google.com. Credit card application decisions are made solely by Synchrony Bank. 0% APR with equal monthly payments is available every day on Phone Purchases (as defined in the credit card agreement). At times, we may offer Equal Pay Financing promotions with 0% APR on identified Qualifying Purchases (and all other items purchased in the same sales transaction). No interest will be charged on Phone Purchases or Qualifying Purchases and equal monthly payments are required equal to the total Phone or Qualifying Purchase amount divided by the number of months in the applicable promotional period, rounded to the whole cent. Any estimated monthly payments shown on a Phone Purchase or Qualifying Purchase may be shown rounded to the next whole dollar (for ease of display) or may be shown rounded to the whole cent. See your billing statement for your actual equal monthly payment required, which will be rounded to the whole cent. If you make your payments by the due date each month, the monthly payment (adjusted for taxes, delivery and any other items purchased in the same sale transaction) should allow you to pay off the Phone Purchase or Qualifying Purchase within the number of months advertised if this balance is the only balance on your account during the promotional period. If you have other balances on your account, this monthly payment will be added to the monthly payment applicable to those balances. New Accounts as of 6/27/24: Purchase APR for Phone Purchases 0.00%. Purchase APR for Other Purchases 34.99%. Penalty APR 39.99%. Min Interest Charge $1. Subject to credit approval.</li>
+            </ol>
+            <ul class="lista-simbolos">
+                <li>* Your Pixel will generally receive Pixel Drops during the applicable Android update and support periods for the phone. See <a href="https://g.co/pixel/updates" target="_blank">g.co/pixel/updates</a> for details. Availability of some Pixel Drops may vary by phone and device model.</li>
+                <li>† All orders that deliver free of charge use the lowest-cost option unless otherwise noted.</li>
+                <li>§ Google Fitbit Air works with most phones running on Android 11 or higher and Apple iOS 16.4 or higher. Google Health and Google Fitbit Air require Google Account, Google Health app and internet connection. Feature availability varies; some features require Google Health Premium membership. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary. Not intended for medical purposes. See <a href="https://g.co/health/fitbit-air" target="_blank">g.co/health/fitbit-air</a> and <a href="https://g.co/fitbit/compatibility" target="_blank">g.co/fitbit/compatibility</a> for more information.</li>
+                <li>‡ Compared to other Google wearable devices.</li>
+                <li>§§ Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in select countries and languages. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.</li>
+                <li>** Available only to those who sign up with a Google Account for marketing emails from store.google.com between 7/15/2026 at 10:00am PT and 8/7/2026 at 11:59pm PT. Promotional code expires 8/27/2026 at 11:59 pm PT; while supplies last. Must be US resident, aged 18 years or older, with US shipping address. Must be redeemed on Google Store only. Limit 1 per customer. The coupon code can only be used for purchase of the advertised specified Pixel 11 (unlocked or Fi) devices and cannot be applied to any other devices, Google subscriptions, services nor Google Merchandise products. Promotional code and redemption instructions will be emailed after sign-up on 8/11/2026.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-real">
+        <div class="footer-contenido">
+            <h2 class="footer-titulo">Google Store</h2>
+            
+            <div class="footer-columnas">
+                <div class="col-footer">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Magazine</a></li>
+                        <li><a href="#">Pixel for Business</a></li>
+                        <li><a href="#">Official Merch</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Orders</h5>
+                    <ul>
+                        <li><a href="#">Tracking an order</a></li>
+                        <li><a href="#">Shipping options</a></li>
+                        <li><a href="#">Country availability</a></li>
+                        <li><a href="#">Pixel Care+</a></li>
+                        <li><a href="#">Trade-in</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Get help</a></li>
+                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#">Installations</a></li>
+                        <li><a href="#">Disability Support</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Send Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Sustainability</h5>
+                    <ul>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Device recycling</a></li>
+                        <li><a href="#">Refurbished devices</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <span class="pais-select"><img src="img/bandera.png" alt="US Flag" width="20" height="20"> United States</span>
+                    <a href="#">Privacy</a>
+                    <a href="#">Google Nest Commitment to Privacy</a>
+                    <a href="#">Sales Terms</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (v5.3.3) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrito-badge.js"></script>
+</body>
+</html>

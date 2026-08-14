@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Store Hardware Support: Device Repair, Orders & More</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/soporte.css">
+</head>
+<body>
+    <div class="navbarr">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-xl navbar-google sticky-top navbar">
+        <div class="container-fluid px-lg-0">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icono.png" alt="Bootstrap" width="31" height="30">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#googleNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="googleNav">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0 gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="phone.html">Phones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fiwireles.html">Fi Wireless</a></li>
+                    <li class="nav-item"><a class="nav-link" href="watches.html">Watches & Trackers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="euburds.html">Earbuds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="smarthome.html">Smart Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tablest.html">Tablets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accesories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+                </ul>
+                <!-- busquedad, ubicacion, admin -->
+                <div class="d-flex align-items-center">
+                    <button class="btn-icon-google" type="button" title="Buscar">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <a href="https://www.google.com/maps" class="btn-stores-google" title="Stores">
+                        <i class="bi bi-geo-alt-fill fs-6"></i>
+                        <span>Stores</span>
+                    </a>
+                    <a href="php/carrito.php" class="btn-icon-google posicion-carrito" title="Carrito de compras">
+                        <i class="bi bi-cart3"></i>
+                        <span class="badge-carrito" id="badgeCarrito"></span>
+                    </a>
+                    <a href="php/admin/login.php" class="btn-stores-google" title="Administración">
+                        <i class="bi bi-person-lock fs-6"></i>
+                        <span>Admin</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <main class="contenedor-principal">
+    <section class="encabezado-soporte">
+      <h1 class="titulo-principal">Google Hardware Support.<br>We’re here to help.</h1>
+      
+      <h2 class="subtitulo-seccion">Quick help</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+        <div class="col">
+          <div class="tarjeta-ayuda-rapida">
+            <i class="bi bi-tools icono-soporte"></i>
+            <h3>Start a repair</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tarjeta-ayuda-rapida">
+            <i class="bi bi-box-seam icono-soporte"></i>
+            <h3>Manage orders</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-categorias">
+      <h2 class="subtitulo-seccion">What do you need help with?</h2>
+      
+      <div class="row row-cols-2 row-cols-md-4 g-4 mb-4 justify-content-center">
+        <div class="col">
+          <a href="offers.html" class="tarjeta-categoria">
+            <div class="caja-imagen-cat">
+              <img src="img/support/im1.png" alt="Shopping and orders">
+            </div>
+            <p class="nombre-categoria">Shopping and orders</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="phone.html" class="tarjeta-categoria">
+            <div class="caja-imagen-cat">
+              <img src="img/support/im2.png" alt="Pixel phone">
+            </div>
+            <p class="nombre-categoria">Pixel phone</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="watches.html" class="tarjeta-categoria">
+            <div class="caja-imagen-cat">
+              <img src="img/support/im3.png" alt="Pixel Watch">
+            </div>
+            <p class="nombre-categoria">Pixel Watch</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="tablest.html" class="tarjeta-categoria">
+            <div class="caja-imagen-cat">
+              <img src="img/support/im4.png" alt="Pixel Tablet">
+            </div>
+            <p class="nombre-categoria">Pixel Tablet</p>
+          </a>
+        </div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-center">
+        <div class="col">
+          <a href="euburds.html" class="tarjeta-categoria">
+            <div class="caja-imagen-cat">
+              <img src="img/support/im5.png" alt="Pixel Buds">
+            </div>
+            <p class="nombre-categoria">Pixel Buds</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="smarthome.html" class="tarjeta-categoria">
+            <div class="caja-imagen-cat">
+              <img src="img/support/im6.png" alt="Smart Home">
+            </div>
+            <p class="nombre-categoria">Smart Home</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="watches.html" class="tarjeta-categoria">
+            <div class="caja-imagen-cat">
+              <img src="img/support/im7.png" alt="Fitbit">
+            </div>
+            <p class="nombre-categoria">Fitbit</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-recursos">
+      <h2 class="subtitulo-seccion mb-5">Check out these support resources</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-5 mb-5">
+        <div class="col text-center">
+          <img src="img/support/imagen1.png" alt="Device financing" class="img-recurso mb-4">
+          <i class="bi bi-credit-card icono-azul mb-2"></i>
+          <h3 class="titulo-recurso">Device financing</h3>
+          <p class="desc-recurso">Use Google Store Financing to get 0% APR on qualified purchases with equal monthly payments. All with no annual fee.</p>
+          <a href="#" class="enlace-azul">Get started &gt;</a>
+        </div>
+        <div class="col text-center">
+          <img src="img/support/imagen2.png" alt="Trade-in Information" class="img-recurso mb-4">
+          <i class="bi bi-arrow-repeat icono-azul mb-2"></i>
+          <h3 class="titulo-recurso">Trade-in Information</h3>
+          <p class="desc-recurso">Get credit toward your new phone when you trade in your old one.</p>
+          <a href="#" class="enlace-azul">Explore &gt;</a>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-5 mb-5">
+        <div class="col text-center">
+          <img src="img/support/imagen3.png" alt="Nest compatibility checker" class="img-recurso mb-4">
+          <i class="bi bi-house-door icono-azul mb-2"></i>
+          <h3 class="titulo-recurso">Nest compatibility checker</h3>
+          <p class="desc-recurso">Determine if a Nest thermostat is compatible with your heating and cooling system.</p>
+          <a href="#" class="enlace-azul">Get started &gt;</a>
+        </div>
+        <div class="col text-center">
+          <img src="img/support/imagen4.png" alt="Pixel Care+" class="img-recurso mb-4">
+          <i class="bi bi-shield-check icono-azul mb-2"></i>
+          <h3 class="titulo-recurso">Pixel Care+</h3>
+          <p class="desc-recurso">Get Pixel coverage against accidental damage, mechanical failures, and more.</p>
+          <a href="#" class="enlace-azul">Get started &gt;</a>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col text-center">
+          <img src="img/support/imagen5.png" alt="Pixel setup help" class="img-recurso mb-4">
+          <i class="bi bi-phone icono-azul mb-2"></i>
+          <h3 class="titulo-recurso">Pixel setup help</h3>
+          <p class="desc-recurso">24/7, free online support from Pixel experts via phone or chat.</p>
+          <a href="#" class="enlace-azul">Get started &gt;</a>
+        </div>
+        <div class="col text-center">
+          <img src="img/support/imagen6.png" alt="Device info on YouTube" class="img-recurso mb-4">
+          <i class="bi bi-youtube icono-azul mb-2"></i>
+          <h3 class="titulo-recurso">Device info on YouTube</h3>
+          <p class="desc-recurso">Watch videos about the latest Pixel news and get help with troubleshooting.</p>
+          <a href="#" class="enlace-azul">Get started &gt;</a>
+        </div>
+        <div class="col text-center">
+          <img src="img/support/imagen7.png" alt="In-person appointments" class="img-recurso mb-4">
+          <i class="bi bi-geo-alt icono-azul mb-2"></i>
+          <h3 class="titulo-recurso">In-person appointments</h3>
+          <p class="desc-recurso">Let's help you pick the perfect Pixel device or get you set up.</p>
+          <a href="#" class="enlace-azul">Get started &gt;</a>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-contacto text-center my-5">
+      <h2 class="titulo-contacto">Contact us</h2>
+      <p class="subtitulo-contacto">Choose what you need help with and get connected with the right agent</p>
+      <div class="row row-cols-2 row-cols-md-4 g-4 mt-3">
+        <div class="col">
+          <a href="offers.html" class="tarjeta-contacto">
+            <i class="bi bi-bag icono-contacto"></i>
+            <p>Retail and orders</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="phone.html" class="tarjeta-contacto">
+            <i class="bi bi-phone icono-contacto"></i>
+            <p>Pixel phone</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="watches.html" class="tarjeta-contacto">
+            <i class="bi bi-smartwatch icono-contacto"></i>
+            <p>Pixel Watch</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="smarthome.html" class="tarjeta-contacto">
+            <i class="bi bi-house icono-contacto"></i>
+            <p>Smart Home</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="tablest.html" class="tarjeta-contacto">
+            <i class="bi bi-display icono-contacto"></i>
+            <p>Pixel Tablet</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="euburds.html" class="tarjeta-contacto">
+            <i class="bi bi-earbuds icono-contacto"></i>
+            <p>Pixel Buds</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="watches.html" class="tarjeta-contacto">
+            <i class="bi bi-activity icono-contacto"></i>
+            <p>Fitbit</p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="watches.html" class="tarjeta-contacto">
+            <i class="bi bi-watch icono-contacto"></i>
+            <p>Fitbit Ace LTE</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+     <section class="seccion-texto-legal">
+        <div class="contenedor-legales">
+            <ol class="lista-numerada">
+                <li>Special Edition available while supplies last. Not available in all countries.</li>
+                <li>5G service not available in all areas; speed and performance depend on factors like device configuration and capabilities, network traffic location, signal strength and signal obstruction. Actual results may vary. For more information visit <a href="https://g.co/fi/broadband-facts" target="_blank">g.co/fi/broadband-facts</a>.</li>
+                <li>0% APR with Google Store Financing on Phone and Qualifying Purchases: Google Store Financing is a credit card issued and serviced solely by Synchrony Bank and can be used only for purchases at store.google.com. Credit card application decisions are made solely by Synchrony Bank. 0% APR with equal monthly payments is available every day on Phone Purchases (as defined in the credit card agreement). At times, we may offer Equal Pay Financing promotions with 0% APR on identified Qualifying Purchases (and all other items purchased in the same sales transaction). No interest will be charged on Phone Purchases or Qualifying Purchases and equal monthly payments are required equal to the total Phone or Qualifying Purchase amount divided by the number of months in the applicable promotional period, rounded to the whole cent. Any estimated monthly payments shown on a Phone Purchase or Qualifying Purchase may be shown rounded to the next whole dollar (for ease of display) or may be shown rounded to the whole cent. See your billing statement for your actual equal monthly payment required, which will be rounded to the whole cent. If you make your payments by the due date each month, the monthly payment (adjusted for taxes, delivery and any other items purchased in the same sale transaction) should allow you to pay off the Phone Purchase or Qualifying Purchase within the number of months advertised if this balance is the only balance on your account during the promotional period. If you have other balances on your account, this monthly payment will be added to the monthly payment applicable to those balances. New Accounts as of 6/27/24: Purchase APR for Phone Purchases 0.00%. Purchase APR for Other Purchases 34.99%. Penalty APR 39.99%. Min Interest Charge $2. Subject to credit approval.</li>
+            </ol>
+            <ul class="lista-simbolos">
+                <li>* Your Pixel will generally receive Pixel Drops during the applicable Android update and support periods for the phone. See <a href="https://g.co/pixel/updates" target="_blank">g.co/pixel/updates</a> for details. Availability of some Pixel Drops may vary by phone and device model.</li>
+                <li>† All orders that deliver free of charge use the lowest-cost option unless otherwise noted.</li>
+                <li>§ Google Fitbit Air works with most phones running on Android 11 or higher and Apple iOS 16.4 or higher. Google Health and Google Fitbit Air require Google Account, Google Health app and internet connection. Feature availability varies; some features require Google Health Premium membership. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary. Not intended for medical purposes. See <a href="https://g.co/health/fitbit-air" target="_blank">g.co/health/fitbit-air</a> and <a href="https://g.co/fitbit/compatibility" target="_blank">g.co/fitbit/compatibility</a> for more information.</li>
+                <li>‡ Compared to other Google wearable devices.</li>
+                <li>§§ Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in select countries and languages. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.</li>
+                <li>** Available only to those who sign up with a Google Account for marketing emails from store.google.com between 7/15/2026 at 10:00am PT and 8/7/2026 at 11:59pm PT. Promotional code expires 8/27/2026 at 11:59 pm PT; while supplies last. Must be US resident, aged 18 years or older, with US shipping address. Must be redeemed on Google Store only. Limit 1 per customer. The coupon code can only be used for purchase of the advertised specified Pixel 11 (unlocked or Fi) devices and cannot be applied to any other devices, Google subscriptions, services nor Google Merchandise products. Promotional code and redemption instructions will be emailed after sign-up on 8/11/2026.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer con iconos-->
+    <footer class="footer-real">
+        <div class="footer-contenido">
+            <h2 class="footer-titulo">Google Store</h2>
+            
+            <div class="footer-columnas">
+                <div class="col-footer">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Magazine</a></li>
+                        <li><a href="#">Pixel for Business</a></li>
+                        <li><a href="#">Official Merch</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Orders</h5>
+                    <ul>
+                        <li><a href="#">Tracking an order</a></li>
+                        <li><a href="#">Shipping options</a></li>
+                        <li><a href="#">Country availability</a></li>
+                        <li><a href="#">Pixel Care+</a></li>
+                        <li><a href="#">Trade-in</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Get help</a></li>
+                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#">Installations</a></li>
+                        <li><a href="#">Disability Support</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Send Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h5>Sustainability</h5>
+                    <ul>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Device recycling</a></li>
+                        <li><a href="#">Refurbished devices</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <span class="pais-select"><img src="img/bandera.png" alt="US Flag" width="20px" height="20px"> United States</span>
+                    <a href="#">Privacy</a>
+                    <a href="#">Google Nest Commitment to Privacy</a>
+                    <a href="#">Sales Terms</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+ <!--Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrito-badge.js"></script>
+</body>
+</html>
